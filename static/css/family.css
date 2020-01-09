@@ -1,0 +1,152 @@
+
+.navbar-brand{
+    padding-top: 7px;
+}
+.navbar{
+    margin-bottom: 0;
+    border-radius: 0;
+}
+h1{
+    font-weight: 700;
+}
+h3{
+    font-weight: 700;
+}
+.flash{
+    padding: 60px 0;
+    background: #8bc01f;
+}
+.flash h1{
+    color: #FFF;
+}
+.flash .fbtn{
+    color: #8bc01f;
+    width: 10rem;
+}
+.flash span{
+    display: inline-block;
+    background:#FFF;
+    color: #8bc01f;
+    width: 3rem;
+    text-align: center;
+    margin-right: 10px;
+}
+.flash p{
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #FFF;
+}
+.flash h3{
+    margin-bottom: 30px;
+    color: #FFF;
+}
+.play{
+    background: #3393df;
+    padding: 60px 0;
+}
+.play h1{
+    color: #fff;
+}
+.play span{
+    display: inline-block;
+    background:#FFF;
+    color: #3393df;
+    width: 3rem;
+    text-align: center;
+    margin-right: 10px;
+}
+.play h3:first-child{
+    margin-top: 10rem;
+}
+.play p{
+    /* font-weight: bold; */
+    margin-bottom: 30px;
+    color: #FFF;
+}
+.play h3{
+    /* margin-bottom: 30px; */
+    color: #FFF;
+}
+.play img:first-child{
+    margin-top: 20rem;
+}
+.mess h1{
+    color: #3393df;
+}
+.mess{
+    padding: 60px 0;
+}
+.mess h1 span{
+    display: inline-block;
+    background:#3393df;
+    color: #FFF;
+    width: 3rem;
+    text-align: center;
+    margin-right: 10px;
+}
+.mess h4:nth-child(2){
+    margin-top: 45px;
+
+}
+.mess h4:nth-child(odd){
+    color:#3393df;
+    font-weight: 700;
+    margin-top: 45px;
+}
+.mess p:nth-child(even) {
+    text-indent: 2rem;
+    color: #6b6b6b;
+}
+.footer{
+    padding: 30px;
+    background: #3c3c3c;
+}
+.footer a{
+    color: #a1a3ab;
+}
+.footer p{
+    color: #a1a3ab;
+    margin-top: 15px;
+}
+.footer ul{
+    list-style: none;
+    float: right;
+}
+.footer ul li{
+    float: left;
+    margin-left: 15px;
+}
+.weixin{
+    position: relative;
+}
+.weixin:hover .wechat{
+    display: block;
+    animation: fade linear 0.7s 1 forwards;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.wechat{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    width: 150px;
+    /* background: rgb(66, 69, 216); */
+}
+@media (min-width:768px) and (max-width:992px){
+    .navbar{
+        position: relative;
+    }
+    .navbar-right{
+        position: absolute;
+        top: 0;
+        right: 5%;
+    }
+}

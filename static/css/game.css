@@ -1,0 +1,130 @@
+
+.navbar-brand{
+    padding-top: 7px;
+}
+.navbar{
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.banner{
+    padding: 0;
+}
+h1{
+    font-weight: 700;
+}
+.game{
+    padding:60px 0;
+}
+.game p{
+    color:#CCC;
+}
+.game .lie{
+    margin-top: 15px;
+}
+.game .lie img{
+    border-radius: 5px;
+    /* width: 100%; */
+}
+.anli{
+    padding: 60px 0;
+}
+.anli h1{
+    margin-bottom: 30px;
+}
+.anli p{
+    margin-top: 15px;
+    font-weight: 700;
+    color: #555555;
+}
+.anli .alimg{
+    position: relative;
+    width: auto;
+    margin: 0 auto;
+}
+.anli .alimg img{
+    width: 100%;
+}
+.anli .altxt{
+    display: none;
+    padding: 15px;
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.521);
+    position: absolute;
+    top: 0;
+}
+.anli .alimg:hover .altxt{
+    display: block;
+    animation: fade linear 0.7s 1; 
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.footer{
+    padding: 30px;
+    background: #3c3c3c;
+}
+.footer a{
+    color: #a1a3ab;
+}
+.footer p{
+    color: #a1a3ab;
+    margin-top: 15px;
+}
+.footer ul{
+    list-style: none;
+    float: right;
+}
+.footer ul li{
+    float: left;
+    margin-left: 15px;
+}
+.weixin{
+    position: relative;
+}
+.weixin:hover .wechat{
+    display: block;
+    animation: fade linear 0.7s 1 forwards;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.wechat{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    width: 150px;
+    /* background: rgb(66, 69, 216); */
+}
+@media (min-width:768px) and (max-width:992px){
+    .navbar{
+        position: relative;
+    }
+    .navbar-right{
+        position: absolute;
+        top: 0;
+        right: 5%;
+    }
+}
+
+@media (max-width:768px){
+    .game .text-right{
+        text-align: left;
+    }
+    .game .col-sm-4{
+        display: none;
+    }
+}

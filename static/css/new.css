@@ -1,0 +1,135 @@
+
+.navbar-brand{
+    padding-top: 7px;
+}
+.navbar{
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.new{
+padding: 30px 0;
+}
+.new-img{
+    position: relative;
+    padding-right: 0;
+    overflow: hidden;
+}
+.new-txt{
+    position: absolute;
+    padding: 0 15px;
+    width: 100%;
+    margin-bottom: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    transition: 0.5s;
+}
+.new-img:hover .new-txt{
+    padding: 26% 0;
+}
+.card{
+    padding: 60px 15px;
+    border-bottom: 1px dashed #CCC;
+}
+.card .row>div{
+    padding: 0;
+}
+
+.btn-default{
+    border-radius: 1rem;
+   padding: 5px 20px !important;
+   text-align: center;
+   border-color: #ff6900;
+   color: #ff6900;
+}
+.btn-default:hover{
+    background: #ff6900;
+    color: #FFF;
+}
+.btn-default:active{
+    background: #FF6900 !important;
+    color: #FFF !important;
+}
+.card .row .list{
+    padding: 15px;
+}
+.card .row .list:hover{
+    transform: translate(0,-2px);
+    box-shadow: 0px 0px 5px #CCC;
+}
+.card .row .list h4{
+    margin-bottom: 15px;
+}
+.card .row .list h4:hover{
+    color: #ff6900
+}
+
+.page11 nav{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.page-pos li>a{
+    color: black;
+
+}
+.page-pos li a:hover{
+    color: #FFF;
+    background: #e34637;
+}
+.footer{
+    padding: 30px;
+    background: #3c3c3c;
+}
+.footer a{
+    color: #a1a3ab;
+}
+.footer p{
+    color: #a1a3ab;
+    margin-top: 15px;
+}
+.footer ul{
+    list-style: none;
+    float: right;
+}
+.footer ul li{
+    float: left;
+    margin-left: 15px;
+}
+.weixin{
+    position: relative;
+}
+.weixin:hover .wechat{
+    display: block;
+    animation: fade linear 0.7s 1 forwards;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.wechat{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    width: 150px;
+    /* background: rgb(66, 69, 216); */
+}
+@media (min-width:768px) and (max-width:992px){
+    .navbar{
+        position: relative;
+    }
+    .navbar-right{
+        position: absolute;
+        top: 0;
+        right: 5%;
+    }
+}
