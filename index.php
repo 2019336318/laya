@@ -1,4 +1,5 @@
 <?php
-    include 'header.php';
-    include 'static/index.html';
-    
+	include 'header.php';
+
+	$smarty->display('home/index.tpl');
+	include 'footer.php';

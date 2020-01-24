@@ -1,3 +1,6 @@
 <?php
-    include 'header.php';
-    include 'static/game.html';
+	include 'header.php';
+
+	$smarty->display('home/game.tpl');
+
+	include 'footer.php';
