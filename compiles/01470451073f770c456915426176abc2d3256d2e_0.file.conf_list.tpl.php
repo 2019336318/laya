@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-31 16:14:07
-  from 'D:\phpstudy_pro\WWW\www.laya.com\views\admin\friend_list.tpl' */
+/* Smarty version 3.1.34-dev-7, created on 2020-01-31 20:19:18
+  from 'D:\phpstudy_pro\WWW\www.laya.com\views\admin\conf_list.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e33e1cf74e9b6_40122451',
+  'unifunc' => 'content_5e341b468b3bd7_90351555',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '6da2967dc33270eea021f29b3dc3099b342aac68' => 
+    '01470451073f770c456915426176abc2d3256d2e' => 
     array (
-      0 => 'D:\\phpstudy_pro\\WWW\\www.laya.com\\views\\admin\\friend_list.tpl',
-      1 => 1580458431,
+      0 => 'D:\\phpstudy_pro\\WWW\\www.laya.com\\views\\admin\\conf_list.tpl',
+      1 => 1580473155,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e33e1cf74e9b6_40122451 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e341b468b3bd7_90351555 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- End: Sidebar -->
 
 <!-- Start: Content -->
@@ -50,9 +50,11 @@ function content_5e33e1cf74e9b6_40122451 (Smarty_Internal_Template $_smarty_tpl)
                 <h2 class="panel-body-title">互联网</h2>
                 <table class="table table-striped table-bordered table-hover dataTable">
                   <tr class="active">
-                    <th class="text-center" width="100"><input type="checkbox" value="" id="checkall" class=""> 全选</th>
+                   
                     <th>ID</th>
                     <th>名字</th>
+                    <th>图片</th>
+                    <th>图片</th>
                     <th>图片</th>
                     <th width="200">操作</th>
                   </tr>
@@ -62,25 +64,26 @@ if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
 ?>
                     <tr class="success">
-                      <td class="text-center"><input type="checkbox" value="<?php echo $_smarty_tpl->tpl_vars['v']->value['friend_id'];?>
-" name="idarr[]"
-                          class="cbox"></td>
+                    
   
                       <td>
-                        <?php echo $_smarty_tpl->tpl_vars['v']->value['friend_id'];?>
+                        <?php echo $_smarty_tpl->tpl_vars['v']->value['conf_copy'];?>
 
                       </td>
                       <td>
-                        <?php echo $_smarty_tpl->tpl_vars['v']->value['friend_name'];?>
+                        <?php echo $_smarty_tpl->tpl_vars['v']->value['conf_savecase'];?>
 
                       </td>
                      
-                      <td><img src="<?php echo $_smarty_tpl->tpl_vars['v']->value['friend_img'];?>
-" alt="" width="240px"></td>
+                      <td><img src="<?php echo $_smarty_tpl->tpl_vars['v']->value['conf_email'];?>
+" alt="" width="180px"></td>
+                      <td><img src="<?php echo $_smarty_tpl->tpl_vars['v']->value['conf_qq'];?>
+" alt="" width="180px"></td>
+                      <td><img src="<?php echo $_smarty_tpl->tpl_vars['v']->value['conf_wechat'];?>
+" alt="" width="180px"></td>
                       <td>
                         <div class="btn-group">
-                          <a href="friend_edit.php?id=<?php echo $_smarty_tpl->tpl_vars['v']->value['friend_id'];?>
-" class="btn btn-default btn-gradient"><span
+                          <a href="conf_edit.php" class="btn btn-default btn-gradient"><span
                               class="glyphicons glyphicon-pencil"></span></a>
                         
                         </div>

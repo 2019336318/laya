@@ -132,6 +132,14 @@
              class="sidebar-title">合作伙伴管理</span></a>
        </li>
 
+       <li class="
+       <{if $cururl eq 'conf_list.php'}>
+       active 
+       <{/if}>
+       ">
+        <a href="conf_list.php"><span class="glyphicons glyphicon-list"></span><span
+            class="sidebar-title">网址配置管理</span></a>
+      </li>
 
         <li>
           <a href="cate_list.html"><span class="glyphicons glyphicon-list"></span><span

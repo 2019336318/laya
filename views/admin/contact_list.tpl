@@ -1,27 +1,4 @@
-<?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-31 16:14:07
-  from 'D:\phpstudy_pro\WWW\www.laya.com\views\admin\friend_list.tpl' */
-
-/* @var Smarty_Internal_Template $_smarty_tpl */
-if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e33e1cf74e9b6_40122451',
-  'has_nocache_code' => false,
-  'file_dependency' => 
-  array (
-    '6da2967dc33270eea021f29b3dc3099b342aac68' => 
-    array (
-      0 => 'D:\\phpstudy_pro\\WWW\\www.laya.com\\views\\admin\\friend_list.tpl',
-      1 => 1580458431,
-      2 => 'file',
-    ),
-  ),
-  'includes' => 
-  array (
-  ),
-),false)) {
-function content_5e33e1cf74e9b6_40122451 (Smarty_Internal_Template $_smarty_tpl) {
-?><!-- End: Sidebar -->
+<!-- End: Sidebar -->
 
 <!-- Start: Content -->
 <section id="content">
@@ -32,13 +9,7 @@ function content_5e33e1cf74e9b6_40122451 (Smarty_Internal_Template $_smarty_tpl)
       </ol>
     </div>
     <div class="container">
-  
-  
-  
-  
-  
-  
-  
+      
       <div class="row">
         <div class="col-md-12">
           <div class="panel">
@@ -56,41 +27,29 @@ function content_5e33e1cf74e9b6_40122451 (Smarty_Internal_Template $_smarty_tpl)
                     <th>图片</th>
                     <th width="200">操作</th>
                   </tr>
-                  <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['list_new']->value, 'v');
-if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
-?>
+                  <{foreach $list_new as $v }>
                     <tr class="success">
-                      <td class="text-center"><input type="checkbox" value="<?php echo $_smarty_tpl->tpl_vars['v']->value['friend_id'];?>
-" name="idarr[]"
+                      <td class="text-center"><input type="checkbox" value="<{$v['friend_id']}>" name="idarr[]"
                           class="cbox"></td>
   
                       <td>
-                        <?php echo $_smarty_tpl->tpl_vars['v']->value['friend_id'];?>
-
+                        <{$v['friend_id']}>
                       </td>
                       <td>
-                        <?php echo $_smarty_tpl->tpl_vars['v']->value['friend_name'];?>
-
+                        <{$v['friend_name']}>
                       </td>
                      
-                      <td><img src="<?php echo $_smarty_tpl->tpl_vars['v']->value['friend_img'];?>
-" alt="" width="240px"></td>
+                      <td><img src="<{$v['friend_img']}>" alt="" width="240px"></td>
                       <td>
                         <div class="btn-group">
-                          <a href="friend_edit.php?id=<?php echo $_smarty_tpl->tpl_vars['v']->value['friend_id'];?>
-" class="btn btn-default btn-gradient"><span
+                          <a href="friend_edit.php?id=<{$v['friend_id']}>" class="btn btn-default btn-gradient"><span
                               class="glyphicons glyphicon-pencil"></span></a>
                         
                         </div>
   
                       </td>
                     </tr>
-                    <?php
-}
-}
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?> <!-- <tr class="success">
+                    <{/foreach}> <!-- <tr class="success">
                       <td class="text-center"><input type="checkbox" value="1" name="idarr[]" class="cbox"></td>
                       <td>再谈互联网给传统金融带来的颠覆</td>
                       <td>2015-01-10</td>
@@ -157,5 +116,4 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?> <!-- <tr class=
   <!-- End: Main -->
   </body>
   
-  </html><?php }
-}
+  </html>

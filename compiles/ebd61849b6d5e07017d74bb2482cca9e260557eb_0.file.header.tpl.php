@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-24 10:32:45
+/* Smarty version 3.1.34-dev-7, created on 2020-01-31 16:49:22
   from 'D:\phpstudy_pro\WWW\www.laya.com\views\admin\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e2a574d18c6a6_09922506',
+  'unifunc' => 'content_5e33ea12c6b296_68086363',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ebd61849b6d5e07017d74bb2482cca9e260557eb' => 
     array (
       0 => 'D:\\phpstudy_pro\\WWW\\www.laya.com\\views\\admin\\header.tpl',
-      1 => 1579832905,
+      1 => 1580460559,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e2a574d18c6a6_09922506 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e33ea12c6b296_68086363 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
 
@@ -192,6 +192,14 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
              class="sidebar-title">合作伙伴管理</span></a>
        </li>
 
+       <li class="
+       <?php if ($_smarty_tpl->tpl_vars['cururl']->value == 'conf_list.php') {?>
+       active 
+       <?php }?>
+       ">
+        <a href="conf_list.php"><span class="glyphicons glyphicon-list"></span><span
+            class="sidebar-title">网址配置管理</span></a>
+      </li>
 
         <li>
           <a href="cate_list.html"><span class="glyphicons glyphicon-list"></span><span
